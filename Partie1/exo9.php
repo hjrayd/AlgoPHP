@@ -8,7 +8,7 @@ plus de 20 ans, alors celle-ci est imposable (sinon ce n’est pas le cas, « no
 
 <?php
 
-$age=56;
+$age=32;
 $sexe=F;
 
 if(gettype($sexe) == "string" || gettype($age) == "integer" ) {
