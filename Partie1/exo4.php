@@ -8,10 +8,11 @@
 <?php
 
 $phrase="Engage le jeu que je le gagne";
-$phrase2= strrev($phrase);
+$phraseSansEspaceSansMaj="engagelejeuquejelegagne";
+$phrase2= strrev($phraseSansEspaceSansMaj);
 
 
-if($phrase==$phrase2) {
+if($phraseSansEspaceSansMaj==$phrase2) {
     echo "La phrase $phrase est un palindrome"; 
 }else{
     echo "La phrase $phrase n'est pas un palindrome";
