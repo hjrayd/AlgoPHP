@@ -11,7 +11,7 @@ Si la catégorie n’est pas gérée, merci de le préciser.</p>
 
 <?php
 
-$age=10;
+$age=1;
 
 if(gettype($age) == "double" || gettype($age) == "integer" ) {
     if($age >= 6 and $age <=7) {
@@ -22,11 +22,11 @@ if(gettype($age) == "double" || gettype($age) == "integer" ) {
         $resultat ="Minime";
     } elseif ($age >= 12) {
         $resultat = "Cadet";
-    } 
+    } else {
+        $resultat = "non gérée";
+    }
 
     echo "La personne qui a $age ans est : $resultat<br>";
-} else {
-    echo "Cette catégorie d'âge n'est pas gérée. !<br>";
-}
+} 
     
 
