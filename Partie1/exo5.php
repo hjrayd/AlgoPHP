@@ -7,8 +7,8 @@ Attention, la valeur générée devra être arrondie à 2 décimales</p>
 
 <?php
 
-$entier = 5;
-$flottant = "0.15";
+$entier = 100;
+$flottant = "0.1524";
 $flottant2 = $entier*$flottant;
 
-echo "$entier francs valent $flottant2 euros";
+echo "Montant en francs : $entier <br> $entier francs : $flottant2";
