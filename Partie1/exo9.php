@@ -9,18 +9,15 @@ plus de 20 ans, alors celle-ci est imposable (sinon ce n’est pas le cas, « no
 <?php
 
 $age=32;
-$sexe=F;
+$sexe="F";
+
 
 if(gettype($sexe) == "string" || gettype($age) == "integer" ) {
-    if($age >=18 and $age <= 35 and $sexe==F ) {
+    if ($age >= 18 and $age <=35 && $sexe=="F" || $age >=20 && $sexe=="M") {
         $resultat = "imposable";
-    } elseif ( $age>=20 and $sexe==M) {
-        $resultat= "imposable";
     } else {$resultat="non imposable";
-    }
     
-
-   echo "Age: $age <br> Sexe: $sexe <br> La personne est $resultat ";
+    }     echo "Age: $age <br> Sexe: $sexe <br> La personne est $resultat ";
 } else {
     echo "Veuillez entrer une valeur numérique<br>";
 

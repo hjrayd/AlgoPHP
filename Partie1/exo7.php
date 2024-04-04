@@ -11,21 +11,20 @@ Si la catégorie n’est pas gérée, merci de le préciser.</p>
 
 <?php
 
-$age=1;
+$age=10;
 
-if(gettype($age) == "double" || gettype($age) == "integer" ) {
-    if($age >= 6 and $age <=7) {
-        $resultat = "Poussin";
-    } elseif($age >= 8 and $age <=9) {
-        $resultat = "Pupille";
-    } elseif ($age >= 10 and $age <=11) {
-        $resultat ="Minime";
-    } elseif ($age >= 12) {
-        $resultat = "Cadet";
+if(gettype($age) == "double" || gettype($age) == "integer") {
+    if($age >= 12) {
+        $resultat= "Cadet";
+    } elseif ($age >= 10) {
+        $resultat = "Minime";
+    } elseif ($age >= 8) {
+        $resultat= "Pupille";
+    } elseif ($age >= 6) {
+        $resultat= "Poussin";
     } else {
         $resultat = "non gérée";
     }
 
-    echo "La personne qui a $age ans est : $resultat<br>";
-} 
-    
+    echo "La personne qui a $age ans est : $resultat <br>";
+}

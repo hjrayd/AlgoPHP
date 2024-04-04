@@ -12,8 +12,7 @@ $marques = ["Peugeot", "Renault", "BMW", "Mercedes"];
 $nbmarques = count($marques);
 
 echo "Il y a $nbmarques marques de voitures dans la liste : <br>";
-
-for ($i = 0 ; $i < count($marques); $i++ ) 
-   { echo $marques[$i]. "<br>"; 
+foreach ($marques as $valeur) {
+   echo "$valeur <br>";
 }
 
