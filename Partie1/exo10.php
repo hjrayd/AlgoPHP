@@ -35,14 +35,3 @@ $reste5= $reste4-(1*$pieces1);
 
 echo "Montant à payer : $montant € <br> Montant versés : $montantVerse € <br> Reste à payer : $reste1 € 
 <br> Rendue de monnaie : <br> $billets10 billets de 10, $billets5 billets de 5, $pieces2 pièces de 2, $pieces1 pièces de 1";
-
-
-
-
-
-
-
-
-
-
-

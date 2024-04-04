@@ -25,6 +25,3 @@ if(gettype($sexe) == "string" || gettype($age) == "integer" ) {
     echo "Veuillez entrer une valeur numérique<br>";
 
 }
-    
-
-    

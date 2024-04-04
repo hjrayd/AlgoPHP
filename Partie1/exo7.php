@@ -29,4 +29,3 @@ if(gettype($age) == "double" || gettype($age) == "integer" ) {
     echo "La personne qui a $age ans est : $resultat<br>";
 } 
     
-

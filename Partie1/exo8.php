@@ -26,4 +26,3 @@ while($j <= 10) {
     echo "<br> $j x $nbr = $resultat <br>";
     $j++;
 }
-
