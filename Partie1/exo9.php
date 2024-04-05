@@ -11,6 +11,7 @@ plus de 20 ans, alors celle-ci est imposable (sinon ce n’est pas le cas, « no
 $age=32;
 $sexe="F";
 
+// &&= et || = ou //
 
 if(gettype($sexe) == "string" || gettype($age) == "integer" ) {
     if ($age >= 18 and $age <=35 && $sexe=="F" || $age >=20 && $sexe=="M") {

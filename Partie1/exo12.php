@@ -11,12 +11,33 @@ respective (français ➔ « Salut », anglais ➔ « Hello », espagnol ➔ « 
 
 <?php
 
-$langues = [
+
+$prenoms = [
     "Mickaël" => "FRA",
     "Virgile" => "ESP",
     "Marie-Claire" => "ENG"
 ];
 
-sort($langues);
+ksort($prenoms);
 
-var_dump($langues);
+foreach ($prenoms as $prenom => $abreviation)
+ {
+    if ($abreviation=="FRA") {
+        $resultat="Salut"; 
+    } elseif ($abreviation== "ESP") {
+        $resultat="Hola";
+    } elseif ($abreviation=="ENG") {
+        $resultat="Hello";
+    }
+
+    echo "$resultat $prenom <br>";
+} 
+
+
+
+  
+
+
+
+
+

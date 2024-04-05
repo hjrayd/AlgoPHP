@@ -12,6 +12,9 @@ $marques = ["Peugeot", "Renault", "BMW", "Mercedes"];
 $nbmarques = count($marques);
 
 echo "Il y a $nbmarques marques de voitures dans la liste : <br>";
+
+// foreach > for car plus lisible //
+
 foreach ($marques as $valeur) {
    echo "$valeur <br>";
 }
