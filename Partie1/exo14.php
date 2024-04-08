@@ -6,29 +6,10 @@
 
 <?php
 
-$journais=17;
-$moisnais=01;
-$anneenais=1985;
+$date1 = new DateTime("1985-01-17");
+$date2 = new DateTime("2018-05-21");
+$interval = $date1->diff($date2);
 
-$jour=21;
-$mois=05;
-$annee=2018;
+echo "Age de la personne: " . $interval->y . " ans, " . $interval->m." mois, ".$interval->d." jours "; 
 
-if ($jour >= $journais) {
-    $resultat1 = $jour - $journais; 
- } elseif ( $jour < $journais) {
-    $resultat1= abs($jour-$journais);
- }
-
-if ($mois >= $moisnais) {
-    $resultat2 = $mois - $moisnais;
-} elseif ( $mois < $moisnais ) {
-    $resultat2 = abs ($mois - $moisnais);
-}
-
-if ( $annee>= $anneenais) {
-    $resultat3 = $annee - $anneenais;
-} 
-
-echo "Age de la personne : $resultat3 ans $resultat2 mois $resultat1 jours";
 
