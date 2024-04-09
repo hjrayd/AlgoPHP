@@ -6,7 +6,6 @@ class Personne {
     private string $nom;
     private string $prenom;
     private DateTime $dateNaissance;
-    private int $age;
 
     public function __construct(string $nom, string $prenom, string $dateNaissance) {
         $this->nom = $nom;
@@ -46,7 +45,7 @@ class Personne {
 
     public function getToday ():DateTime
     {
-        return $this->today=time("2024-04-08");
+        return $this->today;
     }
 
     public function setToday (string $today)
@@ -55,8 +54,17 @@ class Personne {
     } 
 
     public function getAge () 
+    { 
+        $today = new DateTime();
+        $age = $today -> diff($this->dateNaissance);
+        return $age->y;
+    }
+
+    public function setAge (int $age)
     {
-        $this -> $age = $today -> diff($this->dateNaissance);
+
+    $this -> age=$age;
+
     }
 }
 
