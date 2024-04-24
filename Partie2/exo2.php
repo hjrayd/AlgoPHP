@@ -25,6 +25,8 @@ echo afficherTableHTML($capitales);
 
 function afficherTableHTML ($capitales) {
 
+    ksort($capitales);
+
     $result="<table border=1>
             <thead>
                 <tr>
@@ -33,11 +35,16 @@ function afficherTableHTML ($capitales) {
                 </tr>
             </thead>
           <tbody>";
+    foreach ($capitales as $pays => $capitale) {
+            $result .= "<tr>
+                        <td> ".mb_strtoupper($pays)."</td>
+                        <td>$capitale</td>
+                        </tr>";
 
-          foreach ($capitales as $pays => $capitale) {
-            $result .= "<tr>"
           }
 
+          $result.= "</tbody>
+                    </table>";
           return $result;
 }
 
