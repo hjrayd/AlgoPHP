@@ -19,11 +19,10 @@ function alimenterListeDeroulante($elements) {
 
     $result = "<select id='liste'>";
 
-    $result .= "<option value='$elements[0]'>$elements[0]</option>";
+    foreach ($elements as $genre) {
 
-    $result .= "<option value='$elements[1]' selected>$elements[1]</option>";
-
-    $result .= "<option value='$elements[2]'>$elements[2]</option>"; 
+      $result .= "<option value='genre'>$genre</option>";
+  }
 
   $result .= "</select>";
 
