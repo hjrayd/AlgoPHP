@@ -26,8 +26,6 @@ function afficherForm($nomsInput) {
         <input type='text' id='$info' name='$info'><br>";
     }
 
-
-
     function listeDeroulante($liste) {
     
         $result = "<select id='liste'>";
@@ -43,14 +41,9 @@ function afficherForm($nomsInput) {
 
       $result .= "</form>";
 
-
-        
-
       return $result;
     }
     
-
-
     return $result;
 
     }
