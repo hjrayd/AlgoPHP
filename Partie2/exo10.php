@@ -10,6 +10,49 @@ de validation (submit) </p>
 
 <?php
 
+$nomsInput = ["Nom", "Prénom", "Adresse mail", "Ville", "Sexe"];
+$liste = ["Développeur logiciel", "Designer Web", "Intégrateur", "Chef de projet"];
 
+
+echo afficherForm($nomsInput);
+echo listeDeroulante($liste);
+
+function afficherForm($nomsInput) {
+    
+    $result = "<form>";
+
+    foreach ($nomsInput as $info) {
+        $result .= "<label for='$info' >$info </label><br>
+        <input type='text' id='$info' name='$info'><br>";
+    }
+
+
+
+    function listeDeroulante($liste) {
+    
+        $result = "<select id='liste'>";
+    
+        foreach ($liste as $metiers) {
+    
+          $result .= "<option value='genre'>$metiers</option>";
+      }
+    
+      $result .= "</select> <br>";
+
+      $result .= "<input type='submit' value='Valider'/>";
+
+      $result .= "</form>";
+
+
+        
+
+      return $result;
+    }
+    
+
+
+    return $result;
+
+    }
 
 ?>
